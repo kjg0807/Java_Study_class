@@ -12,4 +12,10 @@ public class Method3
 		System.out.println(salary * 0.967);
 		salary = 20;
 	}
+
+	public void hap(int num1, int num2)
+	{
+		System.out.println(num1 + num2);
+	}
+	//info: 이름, 나이, 이메일 주소 받아서 출력
 }
