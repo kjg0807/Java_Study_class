@@ -1,4 +1,4 @@
-package com.naver.array;
+package com.naver.object1;
 
 import java.util.Scanner;
 
@@ -27,16 +27,10 @@ public class Calculator
 		return x / y;
 	}
 
-	double avg(int x, int y)
-	{
-		double sum = plus(x, y);
-		double rs = sum / 2;
-		return rs;
-	}
-
 	void execute()
 	{
 		double rs = 0;
+		System.out.println("---계산기---");
 		System.out.println("첫번째 숫자 입력");
 		int x = sc.nextInt();
 		System.out.println("연산기호 입력(+, -, *, /)");
@@ -44,22 +38,33 @@ public class Calculator
 		System.out.println("두번째 숫자 입력");
 		int y = sc.nextInt();
 
-		if (z == "+")
-		{
-			rs = Calculator.plus(x, y);
-		}
-		else if (z == "-")
-		{
-			rs = Calculator.mi(x, y);
-		}
-		else if (z == "*")
-		{
-			rs = Calculator.c(x, y);
-		}
-		else if (z == "/")
-		{
-			rs = Calculator.l(x, y);
-		}
+		switch (z)
+			{
+			case "+":
+				{
+					rs = Calculator.plus(x, y);
+					break;
+				}
+			case "-":
+				{
+					rs = Calculator.mi(x, y);
+					break;
+				}
+			case "*":
+				{
+					rs = Calculator.c(x, y);
+					break;
+				}
+			case "/":
+				{
+					rs = Calculator.l(x, y);
+					break;
+				}
+			default:
+				{
+					System.out.println("연산자 올바르게 재입력");
+				}
+			}
 		System.out.println("실행 결과: " + rs);
 	}
 
