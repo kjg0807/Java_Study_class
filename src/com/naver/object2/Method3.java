@@ -17,5 +17,19 @@ public class Method3
 	{
 		System.out.println(num1 + num2);
 	}
-	//info: 이름, 나이, 이메일 주소 받아서 출력
+
+	// info: 이름, 나이, 이메일 주소 받아서 출력
+	public void info(String name, int age, String email)
+	{
+		System.out.println(name + " " + age + " " + email);
+	}
+
+	public void info2(Member member)
+	{
+		System.out.println(member.name);
+		System.out.println(member.age);
+		System.out.println(member.email);
+		member.age = 100;
+	}
+
 }
