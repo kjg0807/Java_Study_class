@@ -18,5 +18,7 @@ public class Object3Main1
 		{
 			System.out.println(a1[i]);
 		}
+		
+		rt.bank();		
 	}
 }

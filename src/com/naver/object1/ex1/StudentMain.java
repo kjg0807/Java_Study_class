@@ -10,6 +10,7 @@ public class StudentMain
 
 		StudentController sc = new StudentController();
 		sc.start();
+		
 
 		System.out.println("---프로그램 종료---");
 	}
