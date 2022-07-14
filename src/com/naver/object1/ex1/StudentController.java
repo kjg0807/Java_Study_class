@@ -13,10 +13,25 @@ public class StudentController
 	// 5. 추가 - 이름, 번호, 국어, 영어, 수학, 입력 후, 총점, 평균 계산
 	// 6. 프로그램 종료
 
+	// 생성자 이용한 Scanner 입력
+	// Scanner sc;
+	// StudentView sv;
+	// StudentService studentService;;
+	// Student[] students;
+	//
+	// public StudentController()
+	// {
+	// sc = new Scanner(System.in);
+	// sv = new StudentView();
+	// studentService = new StudentService();
+	// }
+
+	Scanner sc = new Scanner(System.in);
+
 	// start 메서드 선언
 	public void start()
 	{
-		Scanner sc = new Scanner(System.in);
+		// Scanner sc = new Scanner(System.in);
 		// 객체 생성
 		StudentService ss = new StudentService(); // 학생 정보 입력
 		Student[] student = null;
@@ -60,7 +75,8 @@ public class StudentController
 			}
 			else if (sel == 5) // 5. 추가 - 이름, 번호, 국어, 영어, 수학, 입력 후, 총점, 평균 계산
 			{
-				System.out.println("추가 창");
+				// System.out.println("추가 창");
+				ss.addStudent();
 			}
 			else if (sel == 6) // 6. 프로그램 종료
 			{
