@@ -16,7 +16,8 @@ public class StudentView
 	// view one - 학생 1명의 정보를 받아 모든 정보 출력
 	public void view(Student stu)
 	{
-		System.out.println("이름: " + stu.name + " 번호: " + stu.number + " 총점: " + stu.total + " 평균: " + stu.avg);
+		System.out.println(
+				"이름: " + stu.getName() + " 번호: " + stu.getNumber() + " 총점: " + stu.getTotal() + " 평균: " + stu.getAvg());
 	}
 
 	// viewAll - 학생 정보를 받아 모든 정보 출력 - 이름, 번호, 국어, 영어, 수학, 총점, 평균
@@ -25,8 +26,9 @@ public class StudentView
 		int i;
 		for (i = 0; i < stu.length; i++)
 		{
-			System.out.println("이름: " + stu[i].name + " 번호: " + stu[i].number + " 국어: " + stu[i].kor + " 영어: "
-					+ stu[i].eng + " 수학: " + stu[i].math + " 총점: " + stu[i].total + " 평균: " + stu[i].avg);
+			System.out.println("이름: " + stu[i].getName() + " 번호: " + stu[i].getNumber() + " 국어: " + stu[i].getKor()
+					+ " 영어: " + stu[i].getEng() + " 수학: " + stu[i].getMath() + " 총점: " + stu[i].getTotal() + " 평균: "
+					+ stu[i].getAvg());
 		}
 		return stu;
 	}

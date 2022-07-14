@@ -26,15 +26,15 @@ public class StudentService
 		{
 			Student stud = new Student();
 			System.out.println((i + 1) + "번째 학생 이름 입력");
-			stud.name = sc.next();
+			stud.setName(sc.next());
 			System.out.println((i + 1) + "번째 학생 번호 입력");
-			stud.number = sc.nextInt();
+			stud.setNumber(sc.nextInt());
 			System.out.println((i + 1) + "번째 국어 점수 입력");
-			stud.kor = sc.nextInt();
+			stud.setKor(sc.nextInt());
 			System.out.println((i + 1) + "번째 영어 점수 입력");
-			stud.eng = sc.nextInt();
+			stud.setEng(sc.nextInt());
 			System.out.println((i + 1) + "번째 수학 점수 입력");
-			stud.math = sc.nextInt();
+			stud.setMath(sc.nextInt());
 
 			// stud.total = stud.kor + stud.eng + stud.math;
 			// stud.avg = stud.total / 3.0;
@@ -55,7 +55,7 @@ public class StudentService
 		Student stud = null; // 리턴하려는 학생 데이터
 		for (int i = 0; i < stu.length; i++)
 		{
-			if (num == stu[i].number)
+			if (num == stu[i].getNumber())
 			{
 				stud = stu[i];
 				break;
@@ -69,6 +69,13 @@ public class StudentService
 	{
 		System.out.println("1명 학생 정보 추가");
 
-		//return stud;
+		// return stud;
+	}
+
+	// removeStudent - 학생 정보를 받아서 삭제하려는 학생의 번호를 입력받는다
+	// 학생의 번호와 일치하는 학생 정보 삭제 , 남은 학생정보를 리턴
+	public void removeStudent()
+	{
+		System.out.println("삭제할 학생의 번호 입력");
 	}
 }

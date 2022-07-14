@@ -71,7 +71,8 @@ public class StudentController
 			else if (sel == 4) // 4. 삭제 - 삭제할 학생 번호 입력, 입력한 번호와 일치하는 학생정보 삭제(배열 한칸 삭제 - 배열을 새로 만든다?)
 			// (번호 없으면 재입력)
 			{
-				System.out.println("삭제 창"); // 5. 추가 - 이름, 번호, 국어, 영어, 수학, 입력 후, 총점, 평균 계산
+				// System.out.println("삭제 창");
+				ss.removeStudent();
 			}
 			else if (sel == 5) // 5. 추가 - 이름, 번호, 국어, 영어, 수학, 입력 후, 총점, 평균 계산
 			{
